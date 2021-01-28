@@ -1,0 +1,5 @@
+hw01- https://serene-tesla-tjhw01.netlify.app/
+hw02- https://serene-tesla-tjhw02.netlify.app/
+hw03- https://serene-tesla-tjhw03.netlify.app/
+hw04- https://serene-tesla-tjhw04.netlify.app/
+cssHoverAssignment- https://serene-tesla-tj-csshoverassign.netlify.app/
