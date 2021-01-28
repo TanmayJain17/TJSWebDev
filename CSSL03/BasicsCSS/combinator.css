@@ -1,0 +1,15 @@
+h2+p{
+    font-weight: bolder;
+}
+
+h2~p{
+    color: darkseagreen;
+}
+
+section>p{
+    background-color: deepskyblue;
+}
+
+section p{
+    font-family: monospace;
+}

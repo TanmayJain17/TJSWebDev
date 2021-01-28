@@ -1,0 +1,31 @@
+*{
+    font-style: italic;
+}
+div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: chocolate;
+    text-align: justify;
+}
+.hero {
+    color: darkblue;
+}
+#one {
+    text-align: right;
+}
+#four{
+    text-align: center;
+}
+
+input[type="text"]
+{
+  font-style: oblique;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+.boxer{
+   height: 100px;
+   width: 100px;
+   background-color: gold;
+   padding: 20px;
+   color: silver;
+}
+
+.boxer:hover{
+    background-color: slateblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: tomato;
+
+}
+
+.boxer:active{
+    width: 80px;
+    height: 80px;
+    font-size: small;
+}
+
+intput:focus{
+    width: 200px;
+    font-size: x-large;
+}
+
