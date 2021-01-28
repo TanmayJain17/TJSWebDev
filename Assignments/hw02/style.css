@@ -1,0 +1,30 @@
+body{
+ background-color: rgba(3, 77, 161,0.4);   
+}
+
+.gotoform{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-weight: bold;
+    height: 50px;
+    width:200px;
+    
+    margin-left: 650px;
+    background-color: rgb(3, 77, 161);
+    border-radius: 20px;
+    transition: 0.15s;
+    box-shadow: gray 2px 2px 0.5px;
+    
+
+}
+.gotoform:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: gray 3px 3px 3px;
+}
+.gotoform:active{
+    transform:scale(0.99,0.99);
+    box-shadow: gray 1.5px 1.5px 0px;
+
+}

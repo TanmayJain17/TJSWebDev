@@ -1,0 +1,90 @@
+body{
+  /*  background-image: url("background.jpg");*/
+    background-color: #3399ff;
+}
+.navbar{
+    width: 1500px;
+    height: 113.5px;
+    background-color: #FBFCFE;
+    border-radius: 60px;
+    position: relative;
+}
+.heading{
+    
+    text-align: center;
+    font-size: large;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.logo{
+    position: absolute;
+    left:75px;
+}
+.someimg{
+    position: absolute;
+    right: 60px;
+}
+
+.loginbox{
+   width: 370px;
+   height: 420px;
+   
+   margin: auto;
+   margin-top: 37px;
+   border-radius: 40px;
+   background-color: whitesmoke;
+   box-shadow: gray 5px 5px 2px;
+
+}
+/*.sign{
+    font-size: xx-large;
+    font-family:; 
+    color:  #3399ff;
+    text-align: Left;
+    
+}*/
+.input{
+    font-size: xx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    width: 370px;
+    height: 70px;
+    background-color:rgba(51,153,255,0.5);
+    border-radius: 5px;
+    
+
+}
+.signbutton{
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgba(250, 118, 114, 0.7);
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: gray 3px 3px 2px;
+}
+.signbutton:hover{
+    background-color: salmon;
+    transform: scale(1.05,1.05);
+    box-shadow: gray 5px 5px 5px;
+    
+}
+.signbutton:active{
+    transform: scale(0.99,0.99);
+    box-shadow: gray 1.75px 1.75px 0.75px;
+}
+.on{
+    margin-left: 1px;
+    width: 93%;
+    padding: 10px;
+    margin: 8px 0px;
+    border:outset 3.5px #0668ca;
+    transition: 0.25s;
+}
+.on:focus{
+    border: springgreen 3.5px outset;
+    transform: scale(1.05,1.05);
+}
