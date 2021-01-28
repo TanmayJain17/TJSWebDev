@@ -1,0 +1,19 @@
+div{
+    height: 100px;
+    width: 100px;
+    color: darkolivegreen;
+    background-color: burlywood;
+    padding: 20px;
+    margin: 30px;
+
+}
+.one{
+    transform:scale(2,0.5)
+}
+.two{
+    transform: rotateX(10deg);
+}
+.three{
+    transform:translate(100px)rotateZ(20deg)  ;
+}
+
