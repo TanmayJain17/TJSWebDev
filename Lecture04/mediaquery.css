@@ -1,0 +1,68 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 40px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 40px;
+   /* animation: example;*/
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes example{
+    0%{
+        background-color: yellowgreen;
+    }
+    43%{
+        background-color: brown;
+    }
+    45%{
+        background-color: darkgoldenrod;
+    }
+    75%{
+        background-color: darkgreen;
+    }
+    100%{
+
+    }
+}
+
+@media(max-width: 1200px)
+{
+    .box{
+        background-color: cyan;
+    }
+}
+@media(max-width: 900px)
+{
+    .box{
+        background-color: violet;
+    }
+}
+@media(max-width: 600px)
+{
+    .box{
+        background-color: gold;
+    }
+}
+@media(min-width:400px){
+    .box2{
+        background-color: slateblue;
+    }
+}
+@media(min-width:800px){
+    .box2{
+        background-color: orange;
+    }
+}
+@media(min-width:1000px){
+    .box2{
+        background-color: pink;
+    }
+}
