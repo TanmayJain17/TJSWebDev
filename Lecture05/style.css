@@ -1,0 +1,43 @@
+.container{
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+    background-color: burlywood;
+}
+
+.item{
+    width :30px;
+    height: 30px;
+    background-color: coral;
+    margin: 10px;
+    border:  dotted black 2px;
+    z-index: 4;
+}
+
+.container.one>.item.four{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 3;
+}
+.one>.five{
+    position: fixed;
+    left: 500px;
+}
+h1{
+    position: fixed;
+}
+.container>.six{
+   position: sticky;
+   top: 10px;
+   bottom: 10px;
+   z-index: 3;
+}
+
+.item:nth-child(2n){
+    background-color: darkkhaki;
+}
+.one>.seven{
+    position: sticky;
+    z-index: 4;
+}
