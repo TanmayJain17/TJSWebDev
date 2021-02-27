@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJ:Slot Machine Game </title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="head">Slot Machine</h1>
+    </div>
+    <section id="section1">
+        
+        <div class="machine">
+            <div class="slot" id="slot1"> 
+                
+                <span class="value" id="value1">😀</span>
+               
+            </div>
+            <div class="slot" id="slot2">
+                
+                <span class="valuex" id="value2">😂</span>
+                
+            </div>
+            <div class="slot" id="slot3">
+                
+                <span class="value" id="value3">😇</span>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="section2">
+    
+        <input type="number" min="1" max="10"  id="inpSpeed">
+        <!--<button id="btnSpeed"><b>Set Speed</b></button>-->
+        <div id="btnStartStop" onclick="plauState()">
+            <span>Try Your Luck!!</span>
+        </div>
+        <!--<button id="startStop" onclick="plauState()">Play!</button>-->
+        <button type="submit" onClick="window.location.href=window.location.href">Play Again 🔄</button>
+    
+    </section>
+    
+
+
+</body>
+</html>

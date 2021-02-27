@@ -1,0 +1,240 @@
+body{
+    background-color: #272727;
+    
+  background-image:
+    linear-gradient(
+      #272727,#3b3b3b,#7a7676
+    );
+}
+/*:root is to create css variables*/
+:root{
+    --speed: 1;
+    /*--set: 'paused'*/
+    /*--spins: 0;*/
+    --totalSpinCount: 40;
+
+}
+#inpSpeed{
+    
+    margin-left: 50px;
+}
+#btnSpeed{
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+#section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+.heading{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    
+}
+#btnStartStop{
+
+    width:200px;
+    height: 30px;
+    background-color: yellow;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: monospace;
+    font-size: larger;
+    transition-delay: 0.9ms;
+
+}
+#btnStartStop:hover{
+    background-color: salmon;
+    transform: scale(1.05,1.05);
+    box-shadow: rgb(150, 192, 0) 2.5px 2.5px 2.5px;
+    color: whitesmoke;
+    font-weight: bold;
+    
+}
+#btnStartStop:active{
+    transform: scale(0.99,0.99);
+    box-shadow: rgb(150, 192, 0) 1.75px 1.75px 0.75px;
+
+}
+#head{
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 300%;
+}
+.machine{
+    background-color: red;
+    background-image:
+    linear-gradient(
+      #f66c19,#e5521f,#d83f22,#c21d28,#b4082c,#9a183e,#7f3755,#785269,#4c7280,#329096
+    );
+    /*border: dashed brown 3px;*/
+    height: 425px;
+    width: 90%;
+    margin: 50px;
+    z-index: 5;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slot{
+   
+    
+    width: 300px;
+    z-index: 1;
+    height: 350px;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+    line-height: 350px;
+    border-radius: 10px;
+    box-shadow: 2.5px 2px 2.5px 2px rgb(29, 29, 29);
+    /*background-image: url(jackpot1.png);*/
+    
+    
+}
+
+
+#value1{
+    
+    display: inline-block;
+    z-index: 3;
+    animation-name: slotspin,fastSlotSpin ;
+    /*calc is use to perform mathematical func in css*/
+    animation-duration: calc(1s/var(--speed));
+    
+    
+    animation-iteration-count: var(--totalSpinCount);
+    animation-timing-function: ease;
+    animation-play-state:paused ;
+
+}
+#value3{
+    
+    display: inline-block;
+    z-index: 3;
+    animation-name: slotspin ;
+    /*calc is use to perform mathematical func in css*/
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: var(--totalSpinCount);
+    animation-timing-function: ease;
+    animation-play-state:paused ;
+
+}
+    
+
+
+ #value2{
+    
+    display: inline-block;
+    z-index: 3;
+    animation-name: slotspin1 ;
+    /*calc is use to perform mathematical func in css*/
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: var(--totalSpinCount);
+    animation-timing-function: ease;
+    animation-play-state:paused ;
+}
+
+@keyframes slotspin {
+    0%{
+        transform: translateY(-350px);
+    }
+
+    100%{
+        transform: translateY(350px);
+    }
+}
+
+@keyframes slotspin1 {
+    0%{
+        transform: translateY(350px);
+    }
+
+    100%{
+        transform: translateY(-350px);
+    }
+}
+
+@media (max-width:1315px){
+
+    .slot{
+        width:275px
+    }
+}
+@media (max-width:1095px){
+
+    .slot{
+        width:250px;
+        height:310px;
+        line-height:310px ;
+        text-align: center;
+    }
+}
+
+@media (max-width:985px){
+
+    .slot{
+        width:200px;
+        height:310px ;
+        line-height: 310px;
+        text-align: center;
+    }
+}
+@media (max-width:820px){
+
+    .slot{
+        width:180px
+    }
+}
+@media (max-width:720px){
+
+    .slot{
+        width:150px
+    }
+}
+@media (max-width:604px){
+
+    .slot{
+        width:120px;
+        height: 285px;
+        line-height: 285px;
+        text-align: center;
+        font-size: 80px;
+    }
+}
+@media (max-width:500px){
+
+    .machine{
+        width: 95%;
+        height: 380px;
+    }
+    .slot{
+        width:105px;
+        height: 235px;
+        line-height: 235px;
+        text-align: center;
+    }
+}

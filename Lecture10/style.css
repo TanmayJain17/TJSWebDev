@@ -1,0 +1,123 @@
+
+/*:root is to create css variables*/
+:root{
+    --speed: 1;
+    /*--set: 'paused'*/
+    /*--spins: 0;*/
+    --totalSpinCount: 40;
+
+}
+#inpSpeed{
+    font-size: large;
+    margin-left: 50px;
+}
+#btnSpeed{
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.machine{
+    background-color: peru;
+    border: dashed brown 3px;
+    height: 300px;
+    width: 900px;
+    margin: 50px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slot{
+   
+    
+    width: 250px;
+    z-index: 1;
+    height: 250px;
+    overflow: hidden;
+    background-color: beige;
+    border: solid darkblue 2px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 250px;
+    
+}
+
+#value1{
+    
+    display: inline-block;
+    z-index: 3;
+    animation-name: slotspin,fastSlotSpin ;
+    /*calc is use to perform mathematical func in css*/
+    animation-duration: calc(1s/var(--speed));
+    
+    
+    animation-iteration-count: var(--totalSpinCount);
+    animation-timing-function: ease;
+    animation-play-state:paused ;
+
+}
+#value3{
+    
+    display: inline-block;
+    z-index: 3;
+    animation-name: slotspin ;
+    /*calc is use to perform mathematical func in css*/
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: var(--totalSpinCount);
+    animation-timing-function: ease;
+    animation-play-state:paused ;
+
+}
+    
+
+
+ #value2{
+    
+    display: inline-block;
+    z-index: 3;
+    animation-name: slotspin1 ;
+    /*calc is use to perform mathematical func in css*/
+    animation-duration: calc(1s/var(--speed));
+    animation-iteration-count: var(--totalSpinCount);
+    animation-timing-function: ease;
+    animation-play-state:paused ;
+}
+
+@keyframes slotspin {
+    0%{
+        transform: translateY(-250px);
+    }
+
+    100%{
+        transform: translateY(250px);
+    }
+}
+
+@keyframes slotspin1 {
+    0%{
+        transform: translateY(250px);
+    }
+
+    100%{
+        transform: translateY(-250px);
+    }
+}
+@keyframes fastSlotSpin {
+    0%{
+        transform: translateY(-250px);
+    }
+
+    100%{
+        transform: translateY(250px);
+    }
+}
+@keyframes fastSlotSpin1 {
+    0%{
+        transform: translateY(250px);
+    }
+
+    100%{
+        transform: translateY(-250px);
+    }
+}
