@@ -2,4 +2,6 @@ hw01- https://serene-tesla-tjhw01.netlify.app/
 hw02- https://serene-tesla-tjhw02.netlify.app/
 hw03- https://serene-tesla-tjhw03.netlify.app/
 hw04- https://serene-tesla-tjhw04.netlify.app/
+hw06- https://serene-tesla-tjhw06-slot-machine-game.netlify.app/
+DelayCount- https://serene-tesla-tjdelaycount.netlify.app/
 cssHoverAssignment- https://serene-tesla-tj-csshoverassign.netlify.app/
