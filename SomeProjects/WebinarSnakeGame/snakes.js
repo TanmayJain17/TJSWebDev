@@ -13,7 +13,7 @@ function inIt(){
         itsColor : 'yellow',
         itsCells : [],
         itsDirection : '',
-        gameOver : function(x){
+        /*gameOver : function(x){
             let counter = 1
             for(let i=0;i< x-1;i++){
                 for(let j=i+1 ; j< x ;j++){
@@ -25,7 +25,7 @@ function inIt(){
             }
 
             return counter
-        },
+        },*/
         creatingCells : function(){
             for(let i=this.itsLenght ; i>=0 ;i--){
                 this.itsCells.push({x:i,y:0})
@@ -67,18 +67,18 @@ function inIt(){
                     Xr=0
                 }
                 snake.itsCells.unshift({x:Xr+1,y:Yr}) 
-                if(snake.gameOver(x)==0){
+                /*if(snake.gameOver(x)==0){
   
                     console.log('f ho gaya')
                     clearInterval(intervalId)
-                }
+                }*/
 
                 
             }
               //moving right
             
             else if(this.itsDirection == 'down'){
-               /* */
+               
                 var x= snake.itsLenght
                 if(food.x==Xr && food.y ==Yr)
                 {
@@ -92,11 +92,11 @@ function inIt(){
                     Yr=0
                 }
                 snake.itsCells.unshift({x:Xr,y:Yr+1})
-                if(snake.gameOver(x)== 0){
+                /*if(snake.gameOver(x)== 0){
 
                     console.log('f ho gaya')
                     clearInterval(intervalId)
-                }
+                }*/
                 
             }
              // moving down
@@ -116,11 +116,11 @@ function inIt(){
                     Yr=H/10
                 }
                 snake.itsCells.unshift({x:Xr,y:Yr-1})
-                if(snake.gameOver(x)== 0){
+               /* if(snake.gameOver(x)== 0){
 
                     console.log('f ho gaya')
                     clearInterval(intervalId)
-                }
+                }*/
                 
             }
              // moving up
@@ -140,11 +140,11 @@ function inIt(){
                     Xr=W/10
                 }
                 snake.itsCells.unshift({x:Xr-1,y:Yr})
-                if(snake.gameOver(x)==0){
+                /*if(snake.gameOver(x)==0){
 
                     console.log('f ho gaya')
                     clearInterval(intervalId)
-                }
+                }*/
                 
             }
              //moving left
@@ -189,9 +189,9 @@ function inIt(){
         //console.log('update')
         snake.updatingCells()
         countScore()
-        if(snake.gameOver()==0){
+       /* if(snake.gameOver()==0){
             clearInterval(intervalId)
-        }
+        }*/
     
     }
 
