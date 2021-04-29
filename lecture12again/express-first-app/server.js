@@ -4,7 +4,11 @@ const app = express()
 app.use('/xyz',express.static(__dirname + '/public')) //mounting the public folder to the xyz path
 
 app.get('/hello',(req,res)=>{
-    res.send('Hello World')
+    user = 'Guest'
+    if(req.query.user){
+        user = req.query.user
+    }
+    res.send('Hello World '+ user)
 })
 
 app.listen(4321,()=>{
