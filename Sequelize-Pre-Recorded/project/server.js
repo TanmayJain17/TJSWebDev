@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path');
-const {center,course,seasons,batch}= require('./model')
+const {center,course,seasons,batch}= require('./dbs/model')
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))

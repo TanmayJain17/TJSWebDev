@@ -1,5 +1,5 @@
 //seeding initial values in the data base
-const {db,center,batch,teacher,course,seasons} = require('./model')
+const {db,center,batch,teacher,course,seasons} = require('./dbs/model')
 
 const seed = async ()=>{
     try{

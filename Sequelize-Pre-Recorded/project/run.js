@@ -1,4 +1,4 @@
-const {db} = require('./model')
+const {db} = require('./dbs/model')
 const {app} = require('./server')
 
 
