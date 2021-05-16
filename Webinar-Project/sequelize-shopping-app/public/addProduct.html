@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="http://localhost:4234/api/product"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script  src="./js/shop.js"></script>
+        <script  src="./js/addProduct.js"></script>
+        <title>TJ-RipKart:Add Product</title>
+    </head>
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="./addProduct.html">
+            <img src="./Images/Logo.png" width="30" height="30" class="d-inline-block align-top pt-2"
+                alt="">
+            <b class="p-2 pb-3 mb-1" style="font-size:x-large; color:#7952b3">Shopper: Add Product</b>
+        </a>
+    </nav>
+    <div class="container mt-5  col-4">
+        
+            <form >
+                <div class="form-row my-3">
+                  <div class="col-12 col-fluid">
+                    <label for="inputProdName"><h5><b>Product Name</b></h5></label>
+                    <input type="text" class="form-control" id="inputProdName">
+                  </div>
+                </div>
+                  <div class="form-row my-3">
+                  <div class="col-12 col-fluid">
+                    <label for="inputProdManf"><h5><b>Product Manufacturer</b></h5></label>
+                    <input type="text" class="form-control" id="inputProdManf">
+                  </div>
+                </div>
+                <div class="form-row my-3">
+                    <div class="col-12 col-fluid">
+                      <label for="inputProdPrice"><h5><b>Price</b></h5></label>
+                      <input type="text" class="form-control" id="inputProdPrice">
+                    </div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-12 col-fluid">
+                        <button  id="btnAddProduct" type="button" class="btn btn-success">Add Product</button>
+                    </div>
+                  </div>
+                
+              </form>
+        
+    </div>
+    
+    
+</body>
+</html>
