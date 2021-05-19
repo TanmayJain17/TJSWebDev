@@ -1,0 +1,13 @@
+#navigation{
+    position:sticky;
+    top: 0px;
+}
+/*why not fixed ??*/
+#contents{
+    height:2000px
+}
+#footer{
+    position: sticky;
+    bottom: 0px;
+    background-color: var(--light);
+}
