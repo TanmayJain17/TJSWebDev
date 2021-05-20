@@ -1,3 +1,14 @@
+function navBarFunc(){
+    let links = $('.navbar-nav .nav-link')
+    links.click(function(event){
+        let tab = $(event.target)
+        let urlComponent = tab.attr('data-component')
+        //console.log(tab)
+
+        //tab.attr('href',`./components/${urlComponent}.html`)
+        $('#contents').load(`../components/${urlComponent}.html`)
+    })
+}
 function getUserName(){
     let username  = window.localStorage.user ? JSON.parse(window.localStorage.user) : null;
     if(!username){
@@ -17,3 +28,9 @@ function getUserName(){
    
 }
 getUserName()
+navBarFunc()
+/* $(document).ready(function(){
+    
+})
+ */
+    
