@@ -3,6 +3,7 @@ const { db } = require('./db/model')
 const path = require('path')
 const userRoute = require('./routes/users/index')
 const postRoute = require('./routes/posts/index')
+const commentRoute = require('./routes/comments/index')
 const app = express()
 
 app.use(express.json())
@@ -10,6 +11,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/api/users',userRoute)
 app.use('/api/posts',postRoute)
+app.use('/api/comments',commentRoute)
 
 db.sync({alter: true})
 .then(()=>{

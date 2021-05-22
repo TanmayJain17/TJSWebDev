@@ -7050,8 +7050,8 @@ button.bg-dark:focus {
 }
 
 .d-flex {
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -ms-flexbox ;
+  display: flex ;
 }
 
 .d-inline-flex {
@@ -7343,8 +7343,8 @@ button.bg-dark:focus {
 }
 
 .justify-content-around {
-  -ms-flex-pack: distribute !important;
-  justify-content: space-around !important;
+  -ms-flex-pack: distribute ;
+  justify-content: space-around ;
 }
 
 .align-items-start {

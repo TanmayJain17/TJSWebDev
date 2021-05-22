@@ -1,7 +1,26 @@
-<div id="row" class="row d-flex justify-content-around">
+<div id="commentForm" class="container mt-5">
+  <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><b>Title</b></label>
+        <input type="text" class="form-control" id="inptTitle" placeholder="Heading of your comment">
+      </div>
+      
+      
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"><b>Content</b></label>
+        <textarea class="form-control" id="inptBody" rows="10" spellcheck="false" placeholder="Your comment goes here"></textarea>
+      </div>
+      <button id="btnPost" class="btn btn-primary">Post Comment</button>
+    </form>
+    
+</div>
+<div id="allPosts" class="row d-flex justify-content-around">
 
 </div>
 
+
+
+
   <script defer src="../app/allPosts.js"></script>
-  <!--<script  src="../app/readMore.js"></script>-->
   <!-- <script defer src="../app/jqueryOperation.js"></script> -->
+  
