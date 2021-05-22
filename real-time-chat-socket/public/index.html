@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./jquery-3.6.0.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <h1>sample socket.io</h1>
+
+    <div id="logInBox">
+        <input type="text" id="inptUserName" placeholder="userName">
+        <input type="password" id="inptPassword" placeholder="Password">
+        <button id="btnSendUserName">SEND</button>
+    </div>
+    <div id="chatBox">
+        <input type="text" id="inptTo" placeholder="To whom (default:EveryOne)">
+        <input type="text" id="inptMsg" placeholder="New Message">
+        <button id="btnSendMsg">SendMsg</button>
+    </div>
+    <div>
+        <ul id="ulList"></ul>
+    </div>
+
+    
+    
+    
+    <!-- <input type="text" id="inptMsg">  this is for on and emit,broadcat.emit,io.emit
+    <button id="btnSend">Send</button>
+
+    <ul id="ulList">
+
+    </ul> -->
+</body>
+</html>
