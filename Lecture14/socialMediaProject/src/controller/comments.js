@@ -1,4 +1,4 @@
-const { Comments } = require('../db/model')
+const { Comments,Users } = require('../db/model') 
 
 async function getAllComments(postIds) {
     const allComments = await Comments.findAll({
@@ -8,7 +8,13 @@ async function getAllComments(postIds) {
     })
     return allComments
 }
-async function postComments(pId, uId, commentTitle, commentBody) {
+async function postComments(pId, uName, commentTitle, commentBody) {
+    const getUser = await Users.findOne({
+        where:{
+            username:uName
+        }
+    })
+    let uId = getUser.id
     const postComment = await Comments.create({
         postId: pId,
         userId: uId,
