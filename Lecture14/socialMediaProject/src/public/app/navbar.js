@@ -3,9 +3,7 @@ function navBarFunc(){
     links.click(function(event){
         let tab = $(event.target)
         let urlComponent = tab.attr('data-component')
-        //console.log(tab)
-
-        //tab.attr('href',`./components/${urlComponent}.html`)
+        
         $('#contents').load(`../components/${urlComponent}.html`)
     })
 }
@@ -29,8 +27,5 @@ function getUserName(){
 }
 getUserName()
 navBarFunc()
-/* $(document).ready(function(){
-    
-})
- */
+
     
