@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="./client.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Socket</title>
+</head>
+<body>
+    <h1>Sample Socket</h1>
+    <span id="socket"></span>
+
+    <select id="selectColour">
+        <option>violet</option>
+        <option>indigo</option>
+        <option>blue</option>
+        <option>green</option>
+        <option>yellow</option>
+        <option>orange</option>
+        <option>red</option>
+    </select>
+    <button id="btnSelect">Select Color</button>
+
+    <div id="box">
+        <div class="item violet"></div>
+        <div class="item indigo"></div>
+        <div class="item blue"></div>
+        <div class="item green"></div>
+        <div class="item yellow"></div>
+        <div class="item orange"></div>
+        <div class="item red"></div>
+    </div>
+</body>
+</html>
