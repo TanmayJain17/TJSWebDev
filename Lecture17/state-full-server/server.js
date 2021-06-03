@@ -16,7 +16,15 @@ app.use(expressSessions({
   }))
 
 app.get('/',(req, res) =>{
-    res.render('index')
+    console.log(req.session)
+    if(!req.session.visits){
+        req.session.visits=1;
+    }
+        
+    else{
+        req.session.visits++
+    }
+    res.render('index',{count:+(req.session.visits)})
 })
 app.listen(4544,()=>{
     console.log('session started on http://localhost:4544')
